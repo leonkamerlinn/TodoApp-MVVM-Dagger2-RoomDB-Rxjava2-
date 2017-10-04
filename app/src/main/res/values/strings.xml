@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TodoMVVM</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="alreadzHaveAccount">Already have account</string>
+    <string name="dontHaveAccount">Dont have account? <b>Register here! </b></string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="register">Register</string>
+    <string name="logout">LOGOUT</string>
+    <string name="save">SAVE</string>
+
+
+    <string-array name="todo_list">
+        <item>ALL</item>
+        <item>INCOMPLETED</item>
+        <item>COMPLETED</item>
+    </string-array>
+</resources>
