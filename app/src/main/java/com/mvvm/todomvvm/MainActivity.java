@@ -16,7 +16,9 @@ import android.widget.ArrayAdapter;
 
 import com.google.firebase.database.FirebaseDatabase;
 import com.mvvm.todomvvm.adapter.TodoAdapter;
+import com.mvvm.todomvvm.di.component.DaggerLoginActivityComponent;
 import com.mvvm.todomvvm.di.component.DaggerMainActivityComponent;
+import com.mvvm.todomvvm.di.component.LoginActivityComponent;
 import com.mvvm.todomvvm.di.component.MainActivityComponent;
 import com.mvvm.todomvvm.di.module.ActivityModule;
 import com.mvvm.todomvvm.helper.TodoListHelper;
@@ -139,6 +141,8 @@ public class MainActivity extends AppCompatActivity implements LifecycleOwner {
         }
         return activityComponent;
     }
+
+
 
 
     @Override

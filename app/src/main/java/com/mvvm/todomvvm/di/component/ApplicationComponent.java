@@ -28,16 +28,7 @@ public interface ApplicationComponent {
     @ApplicationContext
     Context getContext();
 
-
-
-    Application getApplication();
-
     DataManager getDataManager();
-
-    SharedPrefsHelper getPreferenceHelper();
-
-
-
 
 
 

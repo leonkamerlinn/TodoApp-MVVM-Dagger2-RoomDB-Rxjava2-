@@ -7,6 +7,7 @@ import android.content.Context;
 import com.mvvm.todomvvm.di.component.ApplicationComponent;
 import com.mvvm.todomvvm.di.component.DaggerApplicationComponent;
 import com.mvvm.todomvvm.di.module.ApplicationModule;
+import com.mvvm.todomvvm.di.module.DatabaseModule;
 import com.mvvm.todomvvm.utils.DataManager;
 
 import javax.inject.Inject;
@@ -30,11 +31,10 @@ public class DemoApplication extends Application {
     public void onCreate() {
         super.onCreate();
         applicationComponent = DaggerApplicationComponent
-                                    .builder()
-                                    .applicationModule(new ApplicationModule(this))
-
-                                    .build();
-        applicationComponent.inject(this);
+                                            .builder()
+                                            .applicationModule(new ApplicationModule(this))
+                                            .build();
+                applicationComponent.inject(this);
     }
 
     public ApplicationComponent getComponent(){
